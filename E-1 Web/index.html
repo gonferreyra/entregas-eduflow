@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list-items {list-style: none;}
+        .paragraph {margin: 0;}
+        ul{margin: 0;}
+    </style>
+</head>
+
+<body>
+
+    <h1>Curriculum Vitae de Bruce Wayne</h1>
+
+    <h3>Datos Personales</h3>
+
+    <ul>
+        <li>Nombre completo: <strong>Bruce Wayne</strong></li>
+        <li>Fecha de nacimento: <strong>1/5/1939</strong></li>
+        <li>Lugar de nacimiento: <strong>Gotham City</strong></li>
+    </ul>
+
+    <h3>Formacion Academica</h3>
+
+    <ul>
+        <li>1956-1961: <strong>Universidad del Espantapajaros</strong></li>
+        <li>1952-1956: <strong>Instituto de dos Caras</strong></li>
+        <li>1944-1952: <strong>Escuela Primaria del Joker</strong></li>
+    </ul>
+
+    <h3>Experiencia Laboral</h3>
+
+    <ul>
+        <li>1975-1985: <strong>En el paro</strong></li>
+        <li>1965-1975: <strong>Cazavillanos y demas chusma</strong></li>
+        <li>1962-1965: <strong>Aprendiz de superheroe</strong></li>
+    </ul>
+
+    <!-- Listas anidadas -->
+
+    <h1>Internet</h1>
+
+    <h3>Contenido</h3>
+
+    <ol>
+        <li>Principales protocolor</li>
+        <li>formas de conectarse</li>
+    </ol>
+
+    <h3>1. Principales protocolos</h3>
+
+    <ul>
+        <li>Transmision de ficheros</li>
+        <ul>
+            <li>FTP</li>
+        </ul>
+        <li>Correo Electronico</li>
+        <ul>
+            <li>IMAP</li>
+            <li>POP</li>
+            <li>SMTP</li>
+        </ul>
+    </ul>
+
+    <h3>2. Formas de conectarse</h3>
+
+    <p class="paragraph">Red Telefonica conmutada (RTC)</p>
+    <ul>
+        <li class="list-items">La linea telefonica de toda la vida. Para acceder a Internet es necesario un modem.
+        </li>
+    </ul>
+    <p class="paragraph">Red digital de servicios integrados (RDSI)</p>
+    <ul>
+        <li class="list-items">Una linea telefonica especial. Para acceder a internet es necesario un modem RDSI.
+        </li>
+    </ul>
+    <p class="paragraph">Linea de Abonado Digital Asimetrica (ADSL)</p>
+    <ul>
+        <li class="list-items">Se basa en la conversion de una linea RTC en una linea de alta velocidad. Para acceder a
+            Internet es
+            necesario un modem ADSL.
+        </li>
+    </ul>
+    <p class="paragraph">Fibra Optica</p>
+    <ul>
+        <li class="list-items">Una linea de fibra optica. Normalmente la fibra optica no llega hasta el usuario final,
+            por lo que el
+            termino mas apropiado es Fibra hibrida coaxial.
+        </li>
+    </ul>
+
+<!-- Formulario -->
+
+<h1>Formulario de registro</h1>
+
+<label for="name">Nombre: </label>
+<input type="text"><br><br>
+<label for="lastname">Apellidos:</label>
+<input type="text"><br><br>
+
+<label for="sexo" name="sexo">Sexo</label>
+
+<input type="radio" name="sexo">
+<label for="hombre">Hombre</label>
+<input type="radio" name="sexo">
+<label for="mujer">Mujer</label>
+<br><br>
+
+<label for="email" name="email">Correo</label>
+<input type="email" name="email">
+<br><br>
+
+<input type="checkbox">
+<label for="">Deseo recibir informacion sobre novedades y ofertas</label>
+<br><br>
+<input type="checkbox">
+<label for="">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label>
+<br><br>
+<button>Enviar</button>
+
+</body>
+
+</html>
