@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2-JS</title>
+</head>
+
+<body>
+    <script>
+        const pizzas = [{
+                id: 1,
+                nombre: "muzzarella",
+                ingredientes: "salsa de tomate, muzzarella",
+                precio: 500
+            },
+            {
+                id: 2,
+                nombre: "margarita",
+                ingredientes: "salsa de tomate, albahaca, muzzarella",
+                precio: 900
+            },
+            {
+                id: 3,
+                nombre: "cuatro quesos",
+                ingredientes: "mozzarella, gorgonzola, parmesano, fontina",
+                precio: 1200
+            },
+            {
+                id: 4,
+                nombre: "pepperoni",
+                ingredientes: "salsa de tomate, muzzarella, pepperoni, albahaca",
+                precio: 1300
+            },
+            {
+                id: 5,
+                nombre: "champiñones",
+                ingredientes: "salsa de tomate, muzzarella, portobellos, champiñones",
+                precio: 1600
+            },
+            {
+                id: 6,
+                nombre: "fugazza",
+                ingredientes: "cebolla, muzzarella, aceitunas",
+                precio: 1300
+            }
+        ];
+        // a) Las pizzas que tengan un id impar.
+
+        for (let i = 0; i < pizzas.length; i++) {
+            if (pizzas[i].id % 2 != 0) {
+                console.log(pizzas[i]);
+            }
+        };
+
+        // b) ¿Hay alguna pizza que valga menos de $600?
+
+        for (let i = 0; i < pizzas.length; i++) {
+            if (pizzas[i].precio < 600) {
+                console.log(
+                    `La pizza ${pizzas[i].nombre} tiene un valor de $${pizzas[i].precio}, y tiene los siguientes ingredientes ${pizzas[i].ingredientes}`
+                );
+            }
+        }
+
+        // c) Los nombres de todos las pizzas.
+
+        let variedades = [];
+        for (let i = 0; i < pizzas.length; i++) {
+            variedades.push(pizzas[i].nombre)
+        }
+        console.log(`Las variedades de pizzas disponibles son ${variedades}`)
+
+        // Otra opcion
+
+        for (let i = 0; i < pizzas.length; i++) {
+            console.log(`Pizza ${pizzas[i].nombre}`)
+        }
+
+        // d) Los precios de las pizzas.
+
+        for (let i = 0; i < pizzas.length; i++) {
+            console.log(`La pizza tiene un valor de ${pizzas[i].precio} pesos`);
+        }
+
+        // e) El nombre de cada pizza con su respectivo precio.
+
+        for (let i = 0; i < pizzas.length; i++) {
+            console.log(`La pizza ${pizzas[i].nombre} tiene un precio de ${pizzas[i].precio} pesos`);
+        }
+    </script>
+</body>
+
+</html>
