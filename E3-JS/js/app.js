@@ -61,7 +61,7 @@ function filtrarID() {
         setTimeout(() => {
             divError.textContent = '';
         }, 3000);
-    } else if (input.value >= pizzas.length) {
+    } else if (input.value >= pizzas.length + 1) {
         divError.textContent = 'Numero invalido, no se encuentra en la base de datos. Intente con un numero menor.';
         setTimeout(() => {
             divError.textContent = '';
