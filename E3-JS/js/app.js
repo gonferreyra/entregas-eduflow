@@ -67,6 +67,12 @@ function filtrarID() {
             divError.textContent = '';
         }, 3000);
         borrarHTML();
+    } else if (input.value <= 0 || input.value > pizzas.length) {
+        divError.textContent = 'Numero invalido. El numero no puede ser menor o igual a 0. Intente nuevamente un numero valido.';
+        setTimeout(() => {
+            divError.textContent = '';
+        }, 3000);
+        borrarHTML();
     } else {
         mostrarHTML(resultado);
     }
